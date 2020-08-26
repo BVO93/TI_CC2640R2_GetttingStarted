@@ -1,0 +1,11 @@
+
+**** Build of configuration Debug for project swi_CC2640R2_LAUNCHXL_tirtos_gcc ****
+
+"D:\\TI_Progs\\CodeCompriser\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.am3g ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/rom_sysbios.am3g ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****

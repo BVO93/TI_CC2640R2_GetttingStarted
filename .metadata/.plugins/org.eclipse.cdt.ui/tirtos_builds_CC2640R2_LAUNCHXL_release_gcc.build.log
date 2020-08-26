@@ -1,0 +1,53 @@
+
+**** Build of configuration Debug for project tirtos_builds_CC2640R2_LAUNCHXL_release_gcc ****
+
+"D:\\TI_Progs\\CodeCompriser\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.am3g ...
+../src/makefile.libs:56: recipe for target '../src/sysbios/rom_sysbios.am3g' failed
+gmake[1]: *** No rule to make target 'family/arm/m3/Hwi_asm_gnu.sv7M', needed by 'm3_Hwi_asm_gnu.o'.
+gmake[1]: *** No rule to make target 'family/arm/m3/Hwi_asm_switch_gnu.sv7M', needed by 'm3_Hwi_asm_switch_gnu.o'.
+gmake[1]: *** No rule to make target 'family/arm/m3/IntrinsicsSupport_asm_gnu.sv7M', needed by 'm3_IntrinsicsSupport_asm_gnu.o'.
+gmake[1]: *** No rule to make target 'family/arm/m3/TaskSupport_asm_gnu.sv7M', needed by 'm3_TaskSupport_asm_gnu.o'.
+gmake[1]: *** No rule to make target 'BIOS.c', needed by '_BIOS.o'.
+gmake[1]: *** No rule to make target 'knl/Clock.c', needed by 'knl_Clock.o'.
+gmake[1]: *** No rule to make target 'knl/Idle.c', needed by 'knl_Idle.o'.
+gmake[1]: *** No rule to make target 'knl/Intrinsics.c', needed by 'knl_Intrinsics.o'.
+gmake[1]: *** No rule to make target 'knl/Event.c', needed by 'knl_Event.o'.
+gmake[1]: *** No rule to make target 'knl/Mailbox.c', needed by 'knl_Mailbox.o'.
+gmake[1]: *** No rule to make target 'knl/Queue.c', needed by 'knl_Queue.o'.
+gmake[1]: *** No rule to make target 'knl/Semaphore.c', needed by 'knl_Semaphore.o'.
+gmake[1]: *** No rule to make target 'knl/Swi.c', needed by 'knl_Swi.o'.
+gmake[1]: *** No rule to make target 'knl/Task.c', needed by 'knl_Task.o'.
+gmake[1]: *** No rule to make target 'family/arm/m3/Hwi.c', needed by 'm3_Hwi.o'.
+gmake[1]: *** No rule to make target 'family/arm/m3/TaskSupport.c', needed by 'm3_TaskSupport.o'.
+gmake[1]: *** No rule to make target 'family/arm/cc26xx/Boot.c', needed by 'cc26xx_Boot.o'.
+gmake[1]: *** No rule to make target 'family/arm/cc26xx/Seconds.c', needed by 'cc26xx_Seconds.o'.
+gmake[1]: *** No rule to make target 'family/arm/cc26xx/Timer.c', needed by 'cc26xx_Timer.o'.
+gmake[1]: *** No rule to make target 'family/arm/cc26xx/TimestampProvider.c', needed by 'cc26xx_TimestampProvider.o'.
+gmake[1]: *** No rule to make target 'hal/Hwi.c', needed by 'hal_Hwi.o'.
+gmake[1]: *** No rule to make target 'hal/Hwi_stack.c', needed by 'hal_Hwi_stack.o'.
+gmake[1]: *** No rule to make target 'hal/Hwi_startup.c', needed by 'hal_Hwi_startup.o'.
+gmake[1]: *** No rule to make target 'hal/Seconds.c', needed by 'hal_Seconds.o'.
+gmake[1]: *** No rule to make target 'heaps/HeapMem.c', needed by 'heaps_HeapMem.o'.
+gmake[1]: *** No rule to make target 'rts/gnu/ReentSupport.c', needed by 'gnu_ReentSupport.o'.
+gmake[1]: *** No rule to make target 'gates/GateHwi.c', needed by 'gates_GateHwi.o'.
+gmake[1]: *** No rule to make target 'gates/GateMutex.c', needed by 'gates_GateMutex.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/clock.c', needed by 'tirtos_clock.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/mqueue.c', needed by 'tirtos_mqueue.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/pthread.c', needed by 'tirtos_pthread.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/pthread_barrier.c', needed by 'tirtos_pthread_barrier.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/pthread_cond.c', needed by 'tirtos_pthread_cond.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/pthread_key.c', needed by 'tirtos_pthread_key.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/pthread_mutex.c', needed by 'tirtos_pthread_mutex.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/pthread_rwlock.c', needed by 'tirtos_pthread_rwlock.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/pthread_util.c', needed by 'tirtos_pthread_util.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/sched.c', needed by 'tirtos_sched.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/semaphore.c', needed by 'tirtos_semaphore.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/sleep.c', needed by 'tirtos_sleep.o'.
+gmake[1]: *** No rule to make target 'ti/posix/tirtos/timer.c', needed by 'tirtos_timer.o'.
+gmake[1]: Target 'all' not remade because of errors.
+gmake: *** [../src/sysbios/rom_sysbios.am3g] Error 2
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

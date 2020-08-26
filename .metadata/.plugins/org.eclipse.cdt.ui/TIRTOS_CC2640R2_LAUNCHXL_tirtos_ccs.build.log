@@ -1,0 +1,11 @@
+
+**** Build of configuration Debug for project TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs ****
+
+"D:\\TI_Progs\\CodeCompriser\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****

@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project adc_window_monitor_launchpad_tirtos ****
+
+"D:\\TI_Progs\\CodeCompriser\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'adc_window_monitor_launchpad_tirtos.out' is up to date.
+
+**** Build Finished ****

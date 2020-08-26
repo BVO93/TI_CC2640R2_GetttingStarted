@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;empty_CC2640R2_LAUNCHXL_tirtos_ccs&apos; to &apos;ADC0_UART_CC2640R2_LAUNCHXL_tirtos_ccs&apos;" description="Rename resource &apos;empty_CC2640R2_LAUNCHXL_tirtos_ccs&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/empty_CC2640R2_LAUNCHXL_tirtos_ccs" name="ADC0_UART_CC2640R2_LAUNCHXL_tirtos_ccs" stamp="1597246127319" updateReferences="true"/>
+</session>

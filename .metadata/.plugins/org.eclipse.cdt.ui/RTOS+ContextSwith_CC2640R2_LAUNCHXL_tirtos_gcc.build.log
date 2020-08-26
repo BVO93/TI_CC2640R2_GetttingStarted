@@ -1,0 +1,21 @@
+
+**** Build of configuration Debug for project RTOS+ContextSwith_CC2640R2_LAUNCHXL_tirtos_gcc ****
+
+"D:\\TI_Progs\\CodeCompriser\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.am3g ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../hello.c"
+Invoking: GNU Compiler
+"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-m3 -march=armv7-m -mthumb -mfloat-abi=soft -DDeviceFamily_CC26X0R2 -I"D:/2_Programing/1_Courses/2_TI_CCWorkspace/RTOS+ContextSwith_CC2640R2_LAUNCHXL_tirtos_gcc" -I"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/source/ti/posix/gcc" -I"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/include/newlib-nano" -I"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/include" -I"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"hello.d" -MT"hello.o" -std=c99 @"configPkg/compiler.opt"  -o"hello.o" "../hello.c"
+subdir_rules.mk:9: recipe for target 'hello.o' failed
+../hello.c:19:0: warning: ignoring #pragma DATA_ALIGN  [-Wunknown-pragmas]
+ #pragma DATA_ALIGN(workTaskStack, 8)
+ 
+C:\Users\bjorn\AppData\Local\Temp\ccxYyW4r.s: Assembler messages:
+C:\Users\bjorn\AppData\Local\Temp\ccxYyW4r.s:257: Error: unknown pseudo-op: `.clink'
+C:\Users\bjorn\AppData\Local\Temp\ccxYyW4r.s:258: Error: unknown pseudo-op: `.thumbfunc'
+gmake: *** [hello.o] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

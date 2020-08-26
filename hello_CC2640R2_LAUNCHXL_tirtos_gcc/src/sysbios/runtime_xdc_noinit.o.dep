@@ -1,0 +1,8 @@
+runtime_xdc_noinit.o: \
+ D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/xdc/runtime/xdc_noinit.c \
+ D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/include/stdint.h \
+ D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/include/machine/_default_types.h \
+ D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/include/sys/features.h \
+ D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/include/_newlib_version.h \
+ D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/include/sys/_intsup.h \
+ D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/include/sys/_stdint.h
