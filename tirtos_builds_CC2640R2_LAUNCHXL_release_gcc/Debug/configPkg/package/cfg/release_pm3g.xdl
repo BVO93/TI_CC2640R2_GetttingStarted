@@ -8,11 +8,11 @@ __STACK_SIZE = STACKSIZE;
 __TI_STACK_SIZE = __STACK_SIZE;
 
 INPUT(
-    D:\2_Programing\1_Courses\2_TI_CCWorkspace\tirtos_builds_CC2640R2_LAUNCHXL_release_gcc\Debug\configPkg\package\cfg\release_pm3g.om3g
-    D:\2_Programing\1_Courses\2_TI_CCWorkspace\tirtos_builds_CC2640R2_LAUNCHXL_release_gcc\src\sysbios\rom_sysbios.am3g
-    D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_10_00_10\kernel\tirtos\packages\gnu\targets\arm\rtsv7M\lib\boot.am3g
-    D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_10_00_10\kernel\tirtos\packages\gnu\targets\arm\rtsv7M\lib\syscalls.am3g
-    D:\TI_Progs\CodeCompriser\xdctools_3_61_00_16_core\packages\xdc\rov\runtime\lib\xdc.rov.runtime.am3g
+    D:\2_Programing\2_LaunchXL\1_TestCodeWorkspace\tirtos_builds_CC2640R2_LAUNCHXL_release_gcc\Debug\configPkg\package\cfg\release_pm3g.om3g
+    D:\2_Programing\2_LaunchXL\1_TestCodeWorkspace\tirtos_builds_CC2640R2_LAUNCHXL_release_gcc\src\sysbios\rom_sysbios.am3g
+    C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\kernel\tirtos\packages\gnu\targets\arm\rtsv7M\lib\boot.am3g
+    C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\kernel\tirtos\packages\gnu\targets\arm\rtsv7M\lib\syscalls.am3g
+    C:\ti\ccs1030\xdctools_3_62_00_08_core\packages\xdc\rov\runtime\lib\xdc.rov.runtime.am3g
 )
 
 /*
@@ -42,7 +42,7 @@ ti_sysbios_family_arm_m3_Hwi_nvic = 0xe000e000;
 
 /* Content from ti.sysbios.rts (ti/sysbios/rts/linkcmd.xdt): */
 
-/* Content from ti.sysbios.rom.cortexm.cc26xx.r2 (D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/ti/sysbios/rom/cortexm/cc26xx/r2/golden/CC26xx/CC26xx_link_gnu.xdt): */
+/* Content from ti.sysbios.rom.cortexm.cc26xx.r2 (C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/ti/sysbios/rom/cortexm/cc26xx/r2/golden/CC26xx/CC26xx_link_gnu.xdt): */
 
 }
 EXTERN(xdc_runtime_Error_policy__C)
@@ -259,7 +259,7 @@ ti_sysbios_gates_GateMutex_Instance_finalize__E = 0x1001bec1;
 ti_sysbios_hal_Hwi_startup__E = 0x1001c04b;
 xdc_runtime_Core_assignParams__I = 0x1001c4ad;
 ti_sysbios_hal_Hwi_HwiProxy_switchFromBootStack__E = 0x1001be35;
-ti_sysbios_heaps_HeapMem_allocUnprotected__E = 0x1001a615;
+//ti_sysbios_heaps_HeapMem_allocUnprotected__E = 0x1001a615;
 ti_sysbios_knl_Swi_post__E = 0x1001b011;
 ti_sysbios_hal_Hwi_initStack = 0x1001b56d;
 xdc_runtime_Memory_alloc__E = 0x1001c349;
@@ -449,7 +449,7 @@ ti_sysbios_family_arm_cc26xx_Timer_getPeriod__E = 0x1001c09d;
 ti_sysbios_family_arm_m3_Hwi_initNVIC__E = 0x1001a171;
 ti_sysbios_knl_Clock_addI__E = 0x1001b7a5;
 ti_sysbios_family_arm_m3_Hwi_Instance_finalize__E = 0x1001a755;
-ti_sysbios_heaps_HeapMem_alloc__E = 0x1001ab15;
+//ti_sysbios_heaps_HeapMem_alloc__E = 0x1001ab15;
 ti_sysbios_knl_Task_unblockI__E = 0x1001b751;
 ti_sysbios_knl_Swi_Instance_finalize__E = 0x1001bf77;
 ti_sysbios_family_arm_m3_Hwi_disableInterrupt__E = 0x1001af45;
@@ -598,28 +598,28 @@ SECTIONS
     .rodata_ti_sysbios_rom_ROM_ti_sysbios_family_arm_cc26xx_Timer_setThreshold__I 0x00001318 : AT (0x00001318) {*(.rodata_ti_sysbios_rom_ROM_ti_sysbios_family_arm_cc26xx_Timer_setThreshold__I)}
     .rodata_xdc_runtime_Startup_sfxnTab__C 0x000012cc : AT (0x000012cc) {*(.rodata_xdc_runtime_Startup_sfxnTab__C)}
     .rodata_other : { *(.rodata*) } > REGION_TEXT
-	.sysbios_rom_data 0x20000100  : {
-		__sysbios_rom_data_load__ = LOADADDR (.sysbios_rom_data);
-		__sysbios_rom_data_start__ = .;
-		*(.data_ti_sysbios_knl_Task_Module__state__V)
-		*(.data_ti_sysbios_family_arm_m3_Hwi_Module__state__V)
-		*(.data_ti_sysbios_knl_Clock_Module__state__V)
-		*(.data_ti_sysbios_BIOS_Module__state__V)
-		*(.data_ti_sysbios_knl_Swi_Module__state__V)
-		*(.data_ti_sysbios_family_arm_cc26xx_Timer_Module__state__V)
-		*(.data_ti_sysbios_family_arm_cc26xx_TimestampProvider_Module__state__V)
-		*(.data_xdc_runtime_Startup_Module__state__V)
-		*(.data_xdc_runtime_System_Module__state__V)
-		*(.data_xdc_runtime_Memory_Module__state__V)
-		*(.data_xdc_runtime_Error_Module__state__V)
-		__sysbios_rom_data_end__ = .;
-	} AT> REGION_TEXT
-	.sysbios_data_other : {
-		__sysbios_data_other_load__ = LOADADDR (.sysbios_data_other);
-		__sysbios_data_other_start__ = .;
-		*(.data*)
-		__sysbios_data_other_end__ = .;
-	} > REGION_DATA AT> REGION_TEXT
+    .sysbios_rom_data 0x20000100  : {
+        __sysbios_rom_data_load__ = LOADADDR (.sysbios_rom_data);
+        __sysbios_rom_data_start__ = .;
+        *(.data_ti_sysbios_knl_Task_Module__state__V)
+        *(.data_ti_sysbios_family_arm_m3_Hwi_Module__state__V)
+        *(.data_ti_sysbios_knl_Clock_Module__state__V)
+        *(.data_ti_sysbios_BIOS_Module__state__V)
+        *(.data_ti_sysbios_knl_Swi_Module__state__V)
+        *(.data_ti_sysbios_family_arm_cc26xx_Timer_Module__state__V)
+        *(.data_ti_sysbios_family_arm_cc26xx_TimestampProvider_Module__state__V)
+        *(.data_xdc_runtime_Startup_Module__state__V)
+        *(.data_xdc_runtime_System_Module__state__V)
+        *(.data_xdc_runtime_Memory_Module__state__V)
+        *(.data_xdc_runtime_Error_Module__state__V)
+        __sysbios_rom_data_end__ = .;
+    } AT> REGION_TEXT
+    .sysbios_data_other : {
+        __sysbios_data_other_load__ = LOADADDR (.sysbios_data_other);
+        __sysbios_data_other_start__ = .;
+        *(.data*)
+        __sysbios_data_other_end__ = .;
+    } > REGION_DATA AT> REGION_TEXT
 
 
     __TI_STACK_BASE = __stack;

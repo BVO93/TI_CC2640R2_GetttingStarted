@@ -53,7 +53,7 @@
             usedby="configPkg"/>
 </targets>
 <imports>
-    <package name="xdc.services.global" version="1,0,0,0" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.services.global" version="1,0,0,0" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
         <module name="xdc.services.global.Clock"
                 used="true"
                 uses="">
@@ -65,15 +65,15 @@
                 uses="">
         </module>
     </package>
-    <package name="xdc" version="1,1,1,0" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc" version="1,1,1,0" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
         <module name="xdc.Warnings"
                 used="false"
                 uses="">
         </module>
     </package>
-    <package name="xdc.corevers" version="16,0,2,0" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.corevers" version="16,0,2,0" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
     </package>
-    <package name="xdc.rov" version="1,0,1,0" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.rov" version="1,0,1,0" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
         <module name="xdc.rov.Model"
                 used="false"
                 uses="">
@@ -103,7 +103,7 @@
                 uses="">
         </module>
     </package>
-    <package name="xdc.runtime" version="2,1,0,0" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.runtime" version="2,1,0,0" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
         <module name="xdc.runtime.Assert"
                 used="true"
                 uses="">
@@ -2505,7 +2505,7 @@
             <feature name="Object__table" type="object" value="null"/>
         </module>
     </package>
-    <package name="xdc.rov.runtime" version="" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.rov.runtime" version="1,0,0,0" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
         <module name="xdc.rov.runtime.Monitor"
                 used="true"
                 uses="">
@@ -2787,17 +2787,17 @@
             <feature name="STATEADDR" type="string" value="%26monObject"/>
         </module>
     </package>
-    <package name="xdc.shelf" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.shelf" version="1,0,0,1601763860975" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
     </package>
-    <package name="xdc.services.spec" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.services.spec" version="1,0,0,1601763860975" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
     </package>
-    <package name="xdc.services.intern.xsr" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.services.intern.xsr" version="1,0,0,1601763860975" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
     </package>
-    <package name="xdc.services.intern.gen" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.services.intern.gen" version="1,0,0,1601763860975" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
     </package>
-    <package name="xdc.services.intern.cmd" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.services.intern.cmd" version="1,0,0,1601763860975" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
     </package>
-    <package name="xdc.bld" version="1,0,2,1581216517657" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.bld" version="1,0,2,1601763860975" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
         <module name="xdc.bld.BuildEnvironment"
                 used="false"
                 uses="">
@@ -2851,7 +2851,7 @@
                 uses="">
         </module>
     </package>
-    <package name="gnu.targets" version="1,0,1,1581216517657" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="gnu.targets" version="1,0,1,1601763860975" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="gnu.targets.Linux86"
                 used="false"
                 uses="">
@@ -2869,7 +2869,7 @@
                 uses="">
         </module>
     </package>
-    <package name="gnu.targets.arm" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="gnu.targets.arm" version="1,0,0,1601763860975" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="gnu.targets.arm.GCArmv5T"
                 used="false"
                 uses="">
@@ -2919,15 +2919,15 @@
                 uses="">
         </module>
     </package>
-    <package name="gnu.targets.arm.rtsv7M" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="gnu.targets.arm.rtsv7M" version="1,0,0,1601763860975" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="gnu.targets.arm.rtsv7M.Settings"
                 used="false"
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.interfaces" version="2,0,0,0,0" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.interfaces" version="2,0,0,0,0" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
     </package>
-    <package name="ti.sysbios.family" version="2,0,0,0,0" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.family" version="2,0,0,0,0" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.family.Settings"
                 used="true"
                 uses="">
@@ -2943,7 +2943,7 @@
             <feature name="familyName" type="string" value="arm"/>
         </module>
     </package>
-    <package name="ti.sysbios.family.arm" version="2,0,0,0,0" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.family.arm" version="2,0,0,0,0" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.family.arm.HwiCommon"
                 used="false"
                 uses="">
@@ -2965,13 +2965,13 @@
                 uses="">
         </module>
     </package>
-    <package name="xdc.services.getset" version="1,0,0,0" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.services.getset" version="1,0,0,0" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
         <module name="xdc.services.getset.GetSet"
                 used="false"
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.rom" version="1,0,0,0,0" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.rom" version="1,0,0,0,0" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.rom.ROM"
                 used="true"
                 uses="">
@@ -2999,7 +2999,7 @@
             </feature>
         </module>
     </package>
-    <package name="xdc.runtime.knl" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.runtime.knl" version="1,0,0,1601763860975" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
         <module name="xdc.runtime.knl.GateH"
                 used="false"
                 uses="">
@@ -3061,7 +3061,7 @@
                 uses="">
         </module>
     </package>
-    <package name="ti.catalog.arm.cortexm3" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.catalog.arm.cortexm3" version="1,0,0,1601763860975" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.catalog.arm.cortexm3.OMAP4430"
                 used="false"
                 uses="">
@@ -3123,21 +3123,21 @@
                 uses="">
         </module>
     </package>
-    <package name="ti.catalog.peripherals.hdvicp2" version="" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.catalog.peripherals.hdvicp2" version="" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.catalog.peripherals.hdvicp2.HDVICP2"
                 used="false"
                 uses="">
         </module>
     </package>
-    <package name="ti.catalog" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.catalog" version="1,0,0,1601763860975" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
     </package>
-    <package name="ti.catalog.arm.peripherals.timers" version="" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.catalog.arm.peripherals.timers" version="" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.catalog.arm.peripherals.timers.Timer"
                 used="true"
                 uses="">
         </module>
     </package>
-    <package name="xdc.platform" version="1,0,1,0" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.platform" version="1,0,1,0" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
         <module name="xdc.platform.ExeContext"
                 used="true"
                 uses="">
@@ -3147,7 +3147,7 @@
                 uses="">
         </module>
     </package>
-    <package name="xdc.cfg" version="1,0,2,0" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.cfg" version="1,0,2,0" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
         <module name="xdc.cfg.Program"
                 used="true"
                 uses="">
@@ -3196,13 +3196,13 @@
         <module name="xdc.cfg.SourceDir"
                 used="true"
                 uses="">
-            <feature name="outputDir" type="string" value="D%3A%5C2_Programing%5C1_Courses%5C2_TI_CCWorkspace%5Ctirtos_builds_CC2640R2_LAUNCHXL_release_gcc/src"/>
+            <feature name="outputDir" type="string" value="D%3A%5C2_Programing%5C2_LaunchXL%5C1_TestCodeWorkspace%5Ctirtos_builds_CC2640R2_LAUNCHXL_release_gcc/src"/>
             <feature name="toBuildDir" type="string" value=".."/>
             <feature name="makefileName" type="string" value="makefile.libs"/>
             <feature name="verbose" type="number" value="2"/>
         </module>
     </package>
-    <package name="ti.catalog.arm.cortexm4" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.catalog.arm.cortexm4" version="1,0,0,1601763860975" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.catalog.arm.cortexm4.Tiva"
                 used="false"
                 uses="">
@@ -3244,7 +3244,7 @@
                 uses="">
         </module>
     </package>
-    <package name="ti.platforms.simplelink" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.platforms.simplelink" version="1,0,0,1601763860975" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.platforms.simplelink.Platform"
                 used="true"
                 uses="">
@@ -3254,7 +3254,7 @@
             <feature name="useGnuRomLinkCmd" type="boolean" value="true"/>
         </module>
     </package>
-    <package name="ti.sysbios.hal" version="2,0,0,0,0" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.hal" version="2,0,0,0,0" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.hal.Cache"
                 used="false"
                 uses="">
@@ -3736,7 +3736,7 @@
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.family.arm.cc26xx" version="1,0,0,0,0" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.family.arm.cc26xx" version="1,0,0,0,0" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.family.arm.cc26xx.Alarm"
                 used="false"
                 uses="">
@@ -4182,7 +4182,7 @@
             <feature name="useClockTimer" type="boolean" value="true"/>
         </module>
     </package>
-    <package name="ti.sysbios.family.arm.m3" version="2,0,0,0,0" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.family.arm.m3" version="2,0,0,0,0" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.family.arm.m3.Clobber"
                 used="false"
                 uses="">
@@ -4962,7 +4962,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.knl" version="2,0,0,0,0" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.knl" version="2,0,0,0,0" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.knl.Clock"
                 used="true"
                 uses="">
@@ -6531,7 +6531,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
             <feature name="startupHookFunc" type="object" value="null"/>
         </module>
     </package>
-    <package name="ti.sysbios" version="2,0,0,0,0" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios" version="2,0,0,0,0" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.BIOS"
                 used="true"
                 uses="">
@@ -6630,7 +6630,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
             <feature name="Object__table" type="object" value="null"/>
             <feature name="WAIT_FOREVER" type="number" value="-1"/>
             <feature name="NO_WAIT" type="number" value="0"/>
-            <feature name="version" type="number" value="414977"/>
+            <feature name="version" type="number" value="414978"/>
             <feature name="rovViewInfo" type="xdc.rov.ViewInfo.Instance"><instance id='xdc.rov.ViewInfo.Instance#17' ><field name='viewMap'><map id="xdc.rov.ViewInfo.Instance#17/viewMap" length="2">
   <entry key="Module">
     <struct id="xdc.rov.ViewInfo.Instance#17/viewMap/&quot;Module&quot;">
@@ -6800,13 +6800,13 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
             <feature name="buildROMApp" type="boolean" value="true"/>
             <feature name="includePaths" type="object"><vector id='ti.sysbios.Build/includePaths'  length='0'></vector>
             </feature>
-            <feature name="ccArgs" type="object"><vector id='ti.sysbios.Build/ccArgs'  length='9'><elem>-Dti_sysbios_knl_Task_minimizeLatency__D=FALSE</elem><elem>-Dti_sysbios_rts_gnu_ReentSupport_enableReentSupport__D=FALSE</elem><elem>-Dti_sysbios_family_arm_cc26xx_Boot_driverlibVersion=2</elem><elem>-Dti_posix_tirtos_Settings_debug__D=FALSE</elem><elem>-std=c99</elem><elem>-Dti_sysbios_knl_Clock_stopCheckNext__D=TRUE</elem><elem>-Dti_sysbios_family_arm_m3_Hwi_enableException__D=TRUE</elem><elem>-Dti_sysbios_family_arm_m3_Hwi_disablePriority__D=32U</elem><elem>-Dti_sysbios_family_arm_m3_Hwi_numSparseInterrupts__D=0U</elem></vector>
+            <feature name="ccArgs" type="object"><vector id='ti.sysbios.Build/ccArgs'  length='9'><elem>-Dti_sysbios_rts_gnu_ReentSupport_enableReentSupport__D=FALSE</elem><elem>-Dti_sysbios_family_arm_cc26xx_Boot_driverlibVersion=2</elem><elem>-Dti_posix_tirtos_Settings_debug__D=FALSE</elem><elem>-std=c99</elem><elem>-Dti_sysbios_knl_Clock_stopCheckNext__D=TRUE</elem><elem>-Dti_sysbios_family_arm_m3_Hwi_enableException__D=TRUE</elem><elem>-Dti_sysbios_family_arm_m3_Hwi_disablePriority__D=32U</elem><elem>-Dti_sysbios_family_arm_m3_Hwi_numSparseInterrupts__D=0U</elem><elem>-Dti_sysbios_knl_Task_minimizeLatency__D=FALSE</elem></vector>
             </feature>
             <feature name="annex" type="object"><vector id='ti.sysbios.Build/annex'  length='1'><elem><struct id="ti.sysbios.Build/annex/0">
-  <field name="repo">D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/source/</field>
+  <field name="repo">C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/</field>
   <field name="incs">
     <vector id="ti.sysbios.Build/annex/0/incs" length="1">
-      <elem>D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/source/ti/posix/gcc</elem>
+      <elem>C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/posix/gcc</elem>
     </vector>
   </field>
   <field name="files">
@@ -6830,14 +6830,14 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
             </feature>
         </module>
     </package>
-    <package name="ti.sysbios.rts" version="2,0,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.rts" version="2,0,0,0,1601763860975" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.rts.MemAlloc"
                 used="true"
                 uses="">
             <feature name="generateFunctions" type="boolean" value="true"/>
         </module>
     </package>
-    <package name="ti.sysbios.rts.gnu" version="2,0,0,0,1526671742798" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.rts.gnu" version="2,0,0,0,1611307485013" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.rts.gnu.ReentSupport"
                 used="true"
                 uses="">
@@ -6954,7 +6954,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.gates" version="2,0,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.gates" version="2,0,0,0,1601763860975" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.gates.GateHwi"
                 used="true"
                 uses="">
@@ -7202,7 +7202,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.heaps" version="2,0,0,0,0" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.heaps" version="2,0,0,0,0" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.heaps.HeapBuf"
                 used="false"
                 uses="">
@@ -7480,7 +7480,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.rom.cortexm.cc26xx.r2" version="1,0,0,0,0" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.rom.cortexm.cc26xx.r2" version="1,0,0,0,0" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.rom.cortexm.cc26xx.r2.CC26xx"
                 used="true"
                 uses="">
@@ -7585,7 +7585,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
             </feature>
         </module>
     </package>
-    <package name="ti.posix.tirtos" version="1,1,0,0" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/source/">
+    <package name="ti.posix.tirtos" version="1,1,0,0" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/">
         <module name="ti.posix.tirtos.Settings"
                 used="true"
                 uses="">
@@ -7593,7 +7593,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
             <feature name="debug" type="boolean" value="false"/>
         </module>
     </package>
-    <package name="ti.sysbios.xdcruntime" version="1,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.xdcruntime" version="1,0,0,1601763860975" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.xdcruntime.GateThreadSupport"
                 used="false"
                 uses="">
@@ -7623,15 +7623,15 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
                 uses="">
         </module>
     </package>
-    <package name="ti.sysbios.utils" version="2,0,0,0,1581216517657" repository="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/">
+    <package name="ti.sysbios.utils" version="2,0,0,0,1601763860975" repository="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/">
         <module name="ti.sysbios.utils.Load"
                 used="false"
                 uses="">
         </module>
     </package>
-    <package name="configPkg" version="" repository="D:/2_Programing/1_Courses/2_TI_CCWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_gcc/Debug/">
+    <package name="configPkg" version="" repository="D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_gcc/Debug/">
     </package>
-    <package name="xdc.services.io" version="1,0,0,1526671742798" repository="D:/TI_Progs/CodeCompriser/xdctools_3_61_00_16_core/packages/">
+    <package name="xdc.services.io" version="1,0,0,1611307485013" repository="C:/ti/ccs1030/xdctools_3_62_00_08_core/packages/">
         <module name="xdc.services.io.File"
                 used="false"
                 uses="">

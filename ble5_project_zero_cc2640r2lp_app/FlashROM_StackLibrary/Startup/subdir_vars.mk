@@ -8,7 +8,7 @@ SHELL = cmd.exe
 C_SRCS += \
 ../Startup/CC2640R2_LAUNCHXL.c \
 ../Startup/CC2640R2_LAUNCHXL_fxns.c \
-D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/examples/rtos/CC2640R2_LAUNCHXL/ble5stack/project_zero/src/extra/uartlog/UartLog.c \
+C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/examples/rtos/CC2640R2_LAUNCHXL/ble5stack/project_zero/src/extra/uartlog/UartLog.c \
 ../Startup/ccfg_app_ble.c \
 ../Startup/main.c 
 
@@ -43,7 +43,7 @@ C_DEPS__QUOTED += \
 C_SRCS__QUOTED += \
 "../Startup/CC2640R2_LAUNCHXL.c" \
 "../Startup/CC2640R2_LAUNCHXL_fxns.c" \
-"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/examples/rtos/CC2640R2_LAUNCHXL/ble5stack/project_zero/src/extra/uartlog/UartLog.c" \
+"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/examples/rtos/CC2640R2_LAUNCHXL/ble5stack/project_zero/src/extra/uartlog/UartLog.c" \
 "../Startup/ccfg_app_ble.c" \
 "../Startup/main.c" 
 

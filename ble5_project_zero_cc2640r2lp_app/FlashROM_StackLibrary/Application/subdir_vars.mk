@@ -7,7 +7,7 @@ SHELL = cmd.exe
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Application/project_zero.c \
-D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/ble5stack/common/cc26xx/util.c 
+C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/ble5stack/common/cc26xx/util.c 
 
 C_DEPS += \
 ./Application/project_zero.d \
@@ -27,6 +27,6 @@ C_DEPS__QUOTED += \
 
 C_SRCS__QUOTED += \
 "../Application/project_zero.c" \
-"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/ble5stack/common/cc26xx/util.c" 
+"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/ble5stack/common/cc26xx/util.c" 
 
 

@@ -9,16 +9,16 @@
  */
 
 
--l"D:\2_Programing\1_Courses\2_TI_CCWorkspace\TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs\Debug\configPkg\package\cfg\hello_pem3.oem3"
--l"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\kernel\tirtos\packages\ti\uia\sysbios\lib\release\ti.uia.sysbios.aem3"
--l"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\kernel\tirtos\packages\ti\uia\loggers\lib\release\ti.uia.loggers.aem3"
--l"D:\2_Programing\1_Courses\2_TI_CCWorkspace\TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs\src\sysbios\sysbios.aem3"
--l"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\kernel\tirtos\packages\ti\uia\services\lib\release\ti.uia.services.aem3"
--l"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\kernel\tirtos\packages\ti\uia\runtime\lib\release\ti.uia.runtime.aem3"
--l"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\kernel\tirtos\packages\ti\uia\events\lib\release\ti.uia.events.aem3"
--l"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\kernel\tirtos\packages\ti\targets\arm\rtsarm\lib\boot.aem3"
--l"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\kernel\tirtos\packages\ti\targets\arm\rtsarm\lib\auto_init.aem3"
--l"D:\TI_Progs\CodeCompriser\xdctools_3_61_00_16_core\packages\xdc\rov\runtime\lib\xdc.rov.runtime.aem3"
+-l"D:\2_Programing\2_LaunchXL\1_TestCodeWorkspace\TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs\Debug\configPkg\package\cfg\hello_pem3.oem3"
+-l"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\kernel\tirtos\packages\ti\uia\sysbios\lib\release\ti.uia.sysbios.aem3"
+-l"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\kernel\tirtos\packages\ti\uia\loggers\lib\release\ti.uia.loggers.aem3"
+-l"D:\2_Programing\2_LaunchXL\1_TestCodeWorkspace\TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs\src\sysbios\sysbios.aem3"
+-l"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\kernel\tirtos\packages\ti\uia\services\lib\release\ti.uia.services.aem3"
+-l"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\kernel\tirtos\packages\ti\uia\runtime\lib\release\ti.uia.runtime.aem3"
+-l"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\kernel\tirtos\packages\ti\uia\events\lib\release\ti.uia.events.aem3"
+-l"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\kernel\tirtos\packages\ti\targets\arm\rtsarm\lib\boot.aem3"
+-l"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\kernel\tirtos\packages\ti\targets\arm\rtsarm\lib\auto_init.aem3"
+-l"C:\ti\ccs1030\xdctools_3_62_00_08_core\packages\xdc\rov\runtime\lib\xdc.rov.runtime.aem3"
 
 --retain="*(xdc.meta)"
 

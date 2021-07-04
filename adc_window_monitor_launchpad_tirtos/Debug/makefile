@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS
+CG_TOOL_ROOT := C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS
 
 GEN_OPTS__FLAG := --cmd_file="configPkg/compiler.opt" 
 GEN_CMDS__FLAG := -l"configPkg/linker.cmd" 
@@ -13,10 +13,6 @@ ORDERED_OBJS += \
 "./main_tirtos.obj" \
 "./scif.obj" \
 "./scif_framework.obj" \
-"./sdk_files__do_not_edit/CC1352P1_LAUNCHXL.obj" \
-"./sdk_files__do_not_edit/CC1352P1_LAUNCHXL_fxns.obj" \
-"./sdk_files__do_not_edit/ccfg.obj" \
-"D:/TI_Progs/sdk_4200035/simplelink_cc13x2_26x2_sdk_4_20_00_35/source/ti/boards/CC1352P1_LAUNCHXL/CC1352P1_LAUNCHXL_TIRTOS.cmd" \
 $(GEN_CMDS__FLAG) \
 -l"D:/TI_Progs/sdk_4200035/simplelink_cc13x2_26x2_sdk_4_20_00_35/source/ti/devices/cc13x2_cc26x2/driverlib/bin/ccs/driverlib.lib" \
 -l"D:/TI_Progs/sdk_4200035/simplelink_cc13x2_26x2_sdk_4_20_00_35/source/ti/drivers/lib/drivers_cc13x2.aem4f" \
@@ -31,9 +27,7 @@ RMDIR := RMDIR /S/Q
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir_vars.mk
--include sdk_files__do_not_edit/subdir_vars.mk
 -include subdir_rules.mk
--include sdk_files__do_not_edit/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -143,29 +137,29 @@ BIN_OUTPUTS__QUOTED += \
 
 
 # All Target
-all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+all: $(OBJS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "adc_window_monitor_launchpad_tirtos.out"
 
 # Tool invocations
-adc_window_monitor_launchpad_tirtos.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+adc_window_monitor_launchpad_tirtos.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: ARM Linker'
-	"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=DEVICE_FAMILY=cc13x2_cc26x2 --define=DeviceFamily_CC13X2 -g --c99 --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"adc_window_monitor_launchpad_tirtos.map" --heap_size=0 --stack_size=256 -i"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/lib" -i"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="adc_window_monitor_launchpad_tirtos_linkInfo.xml" --rom_model -o "adc_window_monitor_launchpad_tirtos.out" $(ORDERED_OBJS)
+	"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=DEVICE_FAMILY=cc13x2_cc26x2 --define=DeviceFamily_CC13X2 -g --c99 --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"adc_window_monitor_launchpad_tirtos.map" --heap_size=0 --stack_size=256 -i"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/lib" -i"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="adc_window_monitor_launchpad_tirtos_linkInfo.xml" --rom_model -o "adc_window_monitor_launchpad_tirtos.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 adc_window_monitor_launchpad_tirtos.hex: $(EXE_OUTPUTS)
-	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
+	@echo 'Building secondary target: "$@"'
 	@echo 'Invoking: ARM Hex Utility'
-	"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armhex" --memwidth=8 --romwidth=8 --intel -o "adc_window_monitor_launchpad_tirtos.hex" $(EXE_OUTPUTS__QUOTED)
-	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
+	"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armhex" --memwidth=8 --romwidth=8 --diag_wrap=off --intel -o "adc_window_monitor_launchpad_tirtos.hex" $(EXE_OUTPUTS__QUOTED)
+	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main_tirtos.obj" "scif.obj" "scif_framework.obj" "sdk_files__do_not_edit\CC1352P1_LAUNCHXL.obj" "sdk_files__do_not_edit\CC1352P1_LAUNCHXL_fxns.obj" "sdk_files__do_not_edit\ccfg.obj" 
-	-$(RM) "main_tirtos.d" "scif.d" "scif_framework.d" "sdk_files__do_not_edit\CC1352P1_LAUNCHXL.d" "sdk_files__do_not_edit\CC1352P1_LAUNCHXL_fxns.d" "sdk_files__do_not_edit\ccfg.d" 
+	-$(RM) "main_tirtos.obj" "scif.obj" "scif_framework.obj" 
+	-$(RM) "main_tirtos.d" "scif.d" "scif_framework.d" 
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
 	-@echo 'Finished clean'
 	-@echo ' '

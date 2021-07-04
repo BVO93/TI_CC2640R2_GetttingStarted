@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS
+CG_TOOL_ROOT := C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS
 
 GEN_OPTS__FLAG := --cmd_file="configPkg/compiler.opt" 
 GEN_CMDS__FLAG := -l"configPkg/linker.cmd" 
@@ -31,16 +31,16 @@ ORDERED_OBJS += \
 "./Startup/ccfg_app_ble.obj" \
 "./Startup/main.obj" \
 $(GEN_CMDS__FLAG) \
--l"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/devices/cc26x0r2/driverlib/bin/ccs/driverlib.lib" \
--l"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/kernel/tirtos/packages/ti/dpl/lib/dpl_cc26x0r2.aem3" \
--l"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/drivers/lib/drivers_cc26x0r2.aem3" \
--l"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/drivers/rf/lib/rf_singleMode_cc26x0r2.aem3" \
--l"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/display/lib/display.aem3" \
--l"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/grlib/lib/ccs/m3/grlib.a" \
--l"D:/2_Programing/1_Courses/2_TI_CCWorkspace/ble5_project_zero_cc2640r2lp_stack_library/FlashROM_Library/ble_r2.symbols" \
--l"D:/2_Programing/1_Courses/2_TI_CCWorkspace/ble5_project_zero_cc2640r2lp_stack_library/FlashROM_Library/lib_linker.cmd" \
--l"D:/2_Programing/1_Courses/2_TI_CCWorkspace/ble5_project_zero_cc2640r2lp_stack_library/FlashROM_Library/ble5_project_zero_cc2640r2lp_stack_library.lib" \
--l"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/ble5stack/common/cc26xx/ccs/cc26xx_app.cmd" \
+-l"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/devices/cc26x0r2/driverlib/bin/ccs/driverlib.lib" \
+-l"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/ti/dpl/lib/dpl_cc26x0r2.aem3" \
+-l"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/drivers/lib/drivers_cc26x0r2.aem3" \
+-l"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/drivers/rf/lib/rf_singleMode_cc26x0r2.aem3" \
+-l"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/display/lib/display.aem3" \
+-l"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/grlib/lib/ccs/m3/grlib.a" \
+-l"D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/ble5_project_zero_cc2640r2lp_stack_library/FlashROM_Library/ble_r2.symbols" \
+-l"D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/ble5_project_zero_cc2640r2lp_stack_library/FlashROM_Library/lib_linker.cmd" \
+-l"D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/ble5_project_zero_cc2640r2lp_stack_library/FlashROM_Library/ble5_project_zero_cc2640r2lp_stack_library.lib" \
+-l"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/ble5stack/common/cc26xx/ccs/cc26xx_app.cmd" \
 -llibc.a \
 
 -include ../makefile.init
@@ -183,22 +183,22 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "ble5_project_zero_cc2640r2lp_app.out"
 
 dependents:
-	-cd D:/2_Programing/1_Courses/2_TI_CCWorkspace/ble5_project_zero_cc2640r2lp_stack_library/FlashROM_Library && $(MAKE) all
+	-cd D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/ble5_project_zero_cc2640r2lp_stack_library/FlashROM_Library && $(MAKE) clean all
 
 # Tool invocations
-ble5_project_zero_cc2640r2lp_app.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) D:/2_Programing/1_Courses/2_TI_CCWorkspace/ble5_project_zero_cc2640r2lp_stack_library/FlashROM_Library/ble5_project_zero_cc2640r2lp_stack_library.lib
+ble5_project_zero_cc2640r2lp_app.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/ble5_project_zero_cc2640r2lp_stack_library/FlashROM_Library/ble5_project_zero_cc2640r2lp_stack_library.lib
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: ARM Linker'
-	"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armcl" --cmd_file="D:/2_Programing/1_Courses/2_TI_CCWorkspace/ble5_project_zero_cc2640r2lp_app/TOOLS/defines/ble5_project_zero_cc2640r2lp_app_FlashROM_StackLibrary.opt" --cmd_file="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/ble5stack/config/build_components.opt" --cmd_file="D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/ble5stack/config/factory_config.opt" --cmd_file="D:/2_Programing/1_Courses/2_TI_CCWorkspace/ble5_project_zero_cc2640r2lp_stack_library/TOOLS/build_config.opt"  -mv7M4 --code_state=16 -me -O2 --opt_for_speed=0 --define=DeviceFamily_CC26X0R2 --define=uartlog_FILE="\"\"" --define=UARTLOG_ENABLE -g --c99 --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"ble5_project_zero_cc2640r2lp_app.map" --heap_size=0 --stack_size=256 -i"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/lib" -i"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/include" --reread_libs --define=CC26X0ROM=2 --diag_suppress=16002-D --diag_suppress=10247-D --diag_suppress=10325-D --diag_suppress=10229-D --diag_suppress=16032-D --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ble5_project_zero_cc2640r2lp_app_linkInfo.xml" --rom_model -o "ble5_project_zero_cc2640r2lp_app.out" $(ORDERED_OBJS)
+	"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armcl" --cmd_file="D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/ble5_project_zero_cc2640r2lp_app/TOOLS/defines/ble5_project_zero_cc2640r2lp_app_FlashROM_StackLibrary.opt" --cmd_file="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/ble5stack/config/build_components.opt" --cmd_file="C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/ble5stack/config/factory_config.opt" --cmd_file="D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/ble5_project_zero_cc2640r2lp_stack_library/TOOLS/build_config.opt"  -mv7M4 --code_state=16 -me -O2 --opt_for_speed=0 --define=DeviceFamily_CC26X0R2 --define=uartlog_FILE="\"\"" --define=UARTLOG_ENABLE -g --c99 --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"ble5_project_zero_cc2640r2lp_app.map" --heap_size=0 --stack_size=256 -i"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/lib" -i"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/include" --reread_libs --define=CC26X0ROM=2 --diag_suppress=16002-D --diag_suppress=10247-D --diag_suppress=10325-D --diag_suppress=10229-D --diag_suppress=16032-D --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ble5_project_zero_cc2640r2lp_app_linkInfo.xml" --rom_model -o "ble5_project_zero_cc2640r2lp_app.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
 
 ble5_project_zero_cc2640r2lp_app.hex: $(EXE_OUTPUTS)
-	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
+	@echo 'Building secondary target: "$@"'
 	@echo 'Invoking: ARM Hex Utility'
-	"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armhex" --memwidth=8 --romwidth=8 --intel -o "ble5_project_zero_cc2640r2lp_app.hex" $(EXE_OUTPUTS__QUOTED)
-	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
+	"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armhex" --memwidth=8 --romwidth=8 --diag_wrap=off --intel -o "ble5_project_zero_cc2640r2lp_app.hex" $(EXE_OUTPUTS__QUOTED)
+	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
 
@@ -212,12 +212,12 @@ clean:
 	-@echo ' '
 
 post-build:
-	-D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armhex -order MS --memwidth=8 --romwidth=8 --intel -o ble5_project_zero_cc2640r2lp_app.hex ble5_project_zero_cc2640r2lp_app.out
+	-C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armhex -order MS --memwidth=8 --romwidth=8 --intel -o ble5_project_zero_cc2640r2lp_app.hex ble5_project_zero_cc2640r2lp_app.out
 	-@echo ' '
 
 .PHONY: all clean dependents
 .SECONDARY:
-D:/2_Programing/1_Courses/2_TI_CCWorkspace/ble5_project_zero_cc2640r2lp_stack_library/FlashROM_Library/ble5_project_zero_cc2640r2lp_stack_library.lib:
+D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/ble5_project_zero_cc2640r2lp_stack_library/FlashROM_Library/ble5_project_zero_cc2640r2lp_stack_library.lib:
 
 -include ../makefile.targets
 

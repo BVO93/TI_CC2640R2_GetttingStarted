@@ -4,10 +4,10 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS
+CG_TOOL_ROOT := C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS
 
-GEN_OPTS__FLAG := --cmd_file="D:/2_Programing/1_Courses/2_TI_CCWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" 
-GEN_CMDS__FLAG := -l"D:/2_Programing/1_Courses/2_TI_CCWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" 
+GEN_OPTS__FLAG := --cmd_file="D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" 
+GEN_CMDS__FLAG := -l"D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" 
 
 ORDERED_OBJS += \
 "./AudioCodec.obj" \
@@ -149,21 +149,21 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "i2secho_CC2640R2_LAUNCHXL_tirtos_ccs.out"
 
 dependents:
-	-cd D:/2_Programing/1_Courses/2_TI_CCWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug && $(MAKE) all
+	-cd D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug && $(MAKE) clean all
 
 # Tool invocations
-i2secho_CC2640R2_LAUNCHXL_tirtos_ccs.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) D:/2_Programing/1_Courses/2_TI_CCWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs.lib
+i2secho_CC2640R2_LAUNCHXL_tirtos_ccs.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs.lib
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: ARM Linker'
-	"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC26X0R2 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"i2secho_CC2640R2_LAUNCHXL_tirtos_ccs.map" -i"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source" -i"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/kernel/tirtos/packages" -i"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/lib" --diag_wrap=off --display_error_number --warn_sections --xml_link_info="i2secho_CC2640R2_LAUNCHXL_tirtos_ccs_linkInfo.xml" --rom_model -o "i2secho_CC2640R2_LAUNCHXL_tirtos_ccs.out" $(ORDERED_OBJS)
+	"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC26X0R2 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"i2secho_CC2640R2_LAUNCHXL_tirtos_ccs.map" -i"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source" -i"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages" -i"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/lib" --diag_wrap=off --display_error_number --warn_sections --xml_link_info="i2secho_CC2640R2_LAUNCHXL_tirtos_ccs_linkInfo.xml" --rom_model -o "i2secho_CC2640R2_LAUNCHXL_tirtos_ccs.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 i2secho_CC2640R2_LAUNCHXL_tirtos_ccs.hex: $(EXE_OUTPUTS)
-	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
+	@echo 'Building secondary target: "$@"'
 	@echo 'Invoking: ARM Hex Utility'
-	"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armhex"  -o "i2secho_CC2640R2_LAUNCHXL_tirtos_ccs.hex" $(EXE_OUTPUTS__QUOTED)
-	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
+	"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armhex" --diag_wrap=off -o "i2secho_CC2640R2_LAUNCHXL_tirtos_ccs.hex" $(EXE_OUTPUTS__QUOTED)
+	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 
 # Other Targets
@@ -176,7 +176,7 @@ clean:
 
 .PHONY: all clean dependents
 .SECONDARY:
-D:/2_Programing/1_Courses/2_TI_CCWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs.lib:
+D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs.lib:
 
 -include ../makefile.targets
 

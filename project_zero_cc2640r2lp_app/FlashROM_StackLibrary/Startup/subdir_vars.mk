@@ -7,9 +7,9 @@ SHELL = cmd.exe
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Startup/CC2640R2_LAUNCHXL.c \
-D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/examples/rtos/CC2640R2_LAUNCHXL/blestack/project_zero/src/extra/uartlog/UartLog.c \
+C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/examples/rtos/CC2640R2_LAUNCHXL/blestack/project_zero/src/extra/uartlog/UartLog.c \
 ../Startup/ccfg_app_ble.c \
-D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/examples/rtos/CC2640R2_LAUNCHXL/blestack/project_zero/src/app/main.c 
+C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/examples/rtos/CC2640R2_LAUNCHXL/blestack/project_zero/src/app/main.c 
 
 C_DEPS += \
 ./Startup/CC2640R2_LAUNCHXL.d \
@@ -37,8 +37,8 @@ C_DEPS__QUOTED += \
 
 C_SRCS__QUOTED += \
 "../Startup/CC2640R2_LAUNCHXL.c" \
-"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/examples/rtos/CC2640R2_LAUNCHXL/blestack/project_zero/src/extra/uartlog/UartLog.c" \
+"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/examples/rtos/CC2640R2_LAUNCHXL/blestack/project_zero/src/extra/uartlog/UartLog.c" \
 "../Startup/ccfg_app_ble.c" \
-"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/examples/rtos/CC2640R2_LAUNCHXL/blestack/project_zero/src/app/main.c" 
+"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/examples/rtos/CC2640R2_LAUNCHXL/blestack/project_zero/src/app/main.c" 
 
 

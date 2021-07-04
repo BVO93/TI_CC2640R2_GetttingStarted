@@ -6,7 +6,7 @@ SHELL = cmd.exe
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/blestack/hal/src/common/hal_assert.c 
+C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/blestack/hal/src/common/hal_assert.c 
 
 C_DEPS += \
 ./HAL/Common/hal_assert.d 
@@ -21,6 +21,6 @@ C_DEPS__QUOTED += \
 "HAL\Common\hal_assert.d" 
 
 C_SRCS__QUOTED += \
-"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/blestack/hal/src/common/hal_assert.c" 
+"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/blestack/hal/src/common/hal_assert.c" 
 
 

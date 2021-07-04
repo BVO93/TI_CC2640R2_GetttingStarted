@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := D:/TI_Progs/CodeCompriser/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32
+CG_TOOL_ROOT := C:/ti/ccs1030/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32
 
 GEN_OPTS__FLAG := @"configPkg/compiler.opt" 
 GEN_CMDS__FLAG := -Wl,-T"configPkg/linker.cmd" 
@@ -153,15 +153,15 @@ all: $(OBJS) $(LDS_SRCS) $(GEN_CMDS)
 hello_CC2640R2_LAUNCHXL_tirtos_gcc.out: $(OBJS) $(LDS_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: GNU Linker'
-	"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -DDeviceFamily_CC26X0R2 -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -march=armv7-m -mthumb -Wl,-Map,"hello_CC2640R2_LAUNCHXL_tirtos_gcc.map" -nostartfiles -static -Wl,--gc-sections -L"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source" -L"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/kernel/tirtos/packages" -L"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/lib/thumb/v7-m" -L"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/lib" -march=armv7-m -mthumb --specs=nano.specs -o"hello_CC2640R2_LAUNCHXL_tirtos_gcc.out" $(ORDERED_OBJS)
+	"C:/ti/ccs1030/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -DDeviceFamily_CC26X0R2 -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -march=armv7-m -mthumb -Wl,-Map,"hello_CC2640R2_LAUNCHXL_tirtos_gcc.map" -nostartfiles -static -Wl,--gc-sections -L"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source" -L"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages" -L"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/lib/thumb/v7-m" -L"C:/ti/ccs1030/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/lib" -march=armv7-m -mthumb --specs=nano.specs -o"hello_CC2640R2_LAUNCHXL_tirtos_gcc.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 hello_CC2640R2_LAUNCHXL_tirtos_gcc.hex: $(EXE_OUTPUTS)
-	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
+	@echo 'Building secondary target: "$@"'
 	@echo 'Invoking: GNU Objcopy Utility'
-	"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-objcopy.exe"  $(EXE_OUTPUTS__QUOTED) "hello_CC2640R2_LAUNCHXL_tirtos_gcc.hex"
-	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
+	"C:/ti/ccs1030/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-objcopy.exe"  $(EXE_OUTPUTS__QUOTED) "hello_CC2640R2_LAUNCHXL_tirtos_gcc.hex"
+	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 
 # Other Targets

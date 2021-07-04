@@ -9,8 +9,8 @@ C_SRCS += \
 ../PROFILES/button_service.c \
 ../PROFILES/data_service.c \
 ../PROFILES/devinfoservice.c \
-D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/blestack/host/gatt_uuid.c \
-D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/blestack/host/gattservapp_util.c \
+C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/blestack/host/gatt_uuid.c \
+C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/blestack/host/gattservapp_util.c \
 ../PROFILES/led_service.c \
 ../PROFILES/peripheral.c 
 
@@ -54,8 +54,8 @@ C_SRCS__QUOTED += \
 "../PROFILES/button_service.c" \
 "../PROFILES/data_service.c" \
 "../PROFILES/devinfoservice.c" \
-"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/blestack/host/gatt_uuid.c" \
-"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/blestack/host/gattservapp_util.c" \
+"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/blestack/host/gatt_uuid.c" \
+"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/blestack/host/gattservapp_util.c" \
 "../PROFILES/led_service.c" \
 "../PROFILES/peripheral.c" 
 

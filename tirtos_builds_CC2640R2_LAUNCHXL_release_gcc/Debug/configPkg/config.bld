@@ -19,6 +19,6 @@ if (!(target instanceof xdc.module("xdc.bld.ITarget").Module)) {
 target.ccOpts.prefix = unescape("%20-DDeviceFamily_CC26X0R2%20%20") + target.ccOpts.prefix;
 
 /* configuro was passed the target's rootDir explicitly */
-target.rootDir = 'D:/TI_Progs/CodeCompriser/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32';
+target.rootDir = 'C:/ti/ccs1030/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32';
 
 Build.targets = [target];

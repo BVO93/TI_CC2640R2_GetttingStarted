@@ -6,9 +6,9 @@ SHELL = cmd.exe
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/blestack/hal/src/target/_common/hal_flash_wrapper.c \
-D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/blestack/hal/src/target/_common/hal_rtc_wrapper.c \
-D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/blestack/hal/src/target/_common/hal_trng_wrapper.c 
+C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/blestack/hal/src/target/_common/hal_flash_wrapper.c \
+C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/blestack/hal/src/target/_common/hal_rtc_wrapper.c \
+C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/blestack/hal/src/target/_common/hal_trng_wrapper.c 
 
 C_DEPS += \
 ./HAL/Target/CC2650/Drivers/hal_flash_wrapper.d \
@@ -31,8 +31,8 @@ C_DEPS__QUOTED += \
 "HAL\Target\CC2650\Drivers\hal_trng_wrapper.d" 
 
 C_SRCS__QUOTED += \
-"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/blestack/hal/src/target/_common/hal_flash_wrapper.c" \
-"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/blestack/hal/src/target/_common/hal_rtc_wrapper.c" \
-"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source/ti/blestack/hal/src/target/_common/hal_trng_wrapper.c" 
+"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/blestack/hal/src/target/_common/hal_flash_wrapper.c" \
+"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/blestack/hal/src/target/_common/hal_rtc_wrapper.c" \
+"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source/ti/blestack/hal/src/target/_common/hal_trng_wrapper.c" 
 
 

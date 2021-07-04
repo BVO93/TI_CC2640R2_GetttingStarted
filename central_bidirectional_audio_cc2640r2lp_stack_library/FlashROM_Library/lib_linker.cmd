@@ -3,13 +3,13 @@
  *                step by the lib_search utility
  */
 
-"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\source\ti\blestack\blelib\ctrlll\cc2640_ctrlll_xcxx.a"
-"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\source\ti\blestack\blelib\ctrlhci\cc2640_ctrlhci_xcxx.a"
-"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\source\ti\blestack\blelib\hci_tl\cc26xx_hci_tl_none.a"
-"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\source\ti\blestack\blelib\host\cc26xx_att_xcxx.a"
-"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\source\ti\blestack\blelib\host\cc26xx_gap_xcxx.a"
-"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\source\ti\blestack\blelib\host\cc26xx_gatt_xcxx.a"
-"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\source\ti\blestack\blelib\host\cc26xx_l2cap_xcxx.a"
-"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\source\ti\blestack\blelib\host\cc26xx_profiles_xcxx.a"
-"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\source\ti\blestack\blelib\host\cc26xx_smp_xcxx.a"
-"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\source\ti\blestack\blelib\host\cc26xx_sm_xcxx.a"
+"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\source\ti\blestack\blelib\ctrlll\cc2640_ctrlll_xcxx.a"
+"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\source\ti\blestack\blelib\ctrlhci\cc2640_ctrlhci_xcxx.a"
+"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\source\ti\blestack\blelib\hci_tl\cc26xx_hci_tl_none.a"
+"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\source\ti\blestack\blelib\host\cc26xx_att_xcxx.a"
+"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\source\ti\blestack\blelib\host\cc26xx_gap_xcxx.a"
+"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\source\ti\blestack\blelib\host\cc26xx_gatt_xcxx.a"
+"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\source\ti\blestack\blelib\host\cc26xx_l2cap_xcxx.a"
+"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\source\ti\blestack\blelib\host\cc26xx_profiles_xcxx.a"
+"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\source\ti\blestack\blelib\host\cc26xx_smp_xcxx.a"
+"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\source\ti\blestack\blelib\host\cc26xx_sm_xcxx.a"

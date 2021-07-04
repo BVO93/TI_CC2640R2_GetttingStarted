@@ -1,12 +1,9 @@
+20:33:48 **** Incremental Build of configuration Debug for project tirtos_builds_CC2640R2_LAUNCHXL_release_ccs ****
+make all 
+Cannot run program "make": Launching failed
 
-**** Build of configuration Debug for project tirtos_builds_CC2640R2_LAUNCHXL_release_ccs ****
+Error: Program "make" not found in PATH
+PATH=[C:/ti/ccs910/ccs/eclipse/jre/bin/server;C:/ti/ccs910/ccs/eclipse/jre/bin;C:/ti/ccs910/ccs/eclipse/jre/lib/amd64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\DataProgFiles\ProgramFiles\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\PuTTY\;C:\Users\bjorn\AppData\Local\Microsoft\WindowsApps;;C:\ti\ccs910\ccs\eclipse;]
 
-"D:\\TI_Progs\\CodeCompriser\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
- 
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[2]: Nothing to be done for 'all'.
+20:33:48 Build Finished. 0 errors, 0 warnings. (took 95ms)
 
-**** Build Finished ****

@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: 'D:/2_Programing/1_Courses/2_TI_CCWorkspace/TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs/hello.cfg',
+        cfgScript: 'D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs/hello.cfg',
         profile: 'release',
         cfgHome: 'configPkg',
 });
@@ -41,7 +41,7 @@ else {
 
 var thisObj = {
     cfg:        '../hello.cfg',
-    outputPath: 'D:/2_Programing/1_Courses/2_TI_CCWorkspace/TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs/Debug/configPkg',
+    outputPath: 'D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs/Debug/configPkg',
     exeName:    'hello' + suffix,
     exeIntName: 'hello' + suffix.replace('.', '_'),
     targ:       targ,

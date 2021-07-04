@@ -1,6 +1,6 @@
 #
 # This file was generated based on the configuration script:
-#     D:\2_Programing\1_Courses\2_TI_CCWorkspace\central_bidirectional_audio_cc2640r2lp_app\Tools\app_ble.cfg
+#     D:\2_Programing\2_LaunchXL\1_TestCodeWorkspace\central_bidirectional_audio_cc2640r2lp_app\Tools\app_ble.cfg
 #
 # This makefile may be included in other makefiles that need to build
 # the libraries containing the compiled source files generated as
@@ -14,7 +14,7 @@
 #
 # The absolute path to the generated source directory (at the time the
 # sources were generated) is:
-#    D:\2_Programing\1_Courses\2_TI_CCWorkspace\central_bidirectional_audio_cc2640r2lp_app\Tools\src
+#    D:\2_Programing\2_LaunchXL\1_TestCodeWorkspace\central_bidirectional_audio_cc2640r2lp_app\Tools\src
 #
 GEN_SRC_DIR ?= ../Tools/src
 

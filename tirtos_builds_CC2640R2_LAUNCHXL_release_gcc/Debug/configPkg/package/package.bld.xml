@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/release_pm3g.c"/>
     </sources>
     <configscripts>
-        <srcFile name="D:/2_Programing/1_Courses/2_TI_CCWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_gcc/release.cfg"/>
+        <srcFile name="D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_gcc/release.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -25,7 +25,7 @@
             platform="ti.platforms.tiva:TM4C1294NCPDT"
             isa="v7M"
             suffix="m3g"
-            rootDir="D:/TI_Progs/CodeCompriser/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32"
+            rootDir="C:/ti/ccs1030/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32"
             os="undefined"
             rts="gnu.targets.arm.rtsv7M">
             <model endian="little"
@@ -44,7 +44,7 @@
         isPartial="false"
         xCfgScript="package/cfg/release_pm3g.cfg"
         xCfgPrefix="package/cfg/release_pm3g"
-        cfgScript="D:/2_Programing/1_Courses/2_TI_CCWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_gcc/release.cfg"
+        cfgScript="D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_gcc/release.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -56,7 +56,7 @@
         profile="release"
         xCfgScript="package/cfg/release_pm3g.cfg"
         xCfgPrefix="package/cfg/release_pm3g"
-        cfgScript="D:/2_Programing/1_Courses/2_TI_CCWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_gcc/release.cfg"
+        cfgScript="D:/2_Programing/2_LaunchXL/1_TestCodeWorkspace/tirtos_builds_CC2640R2_LAUNCHXL_release_gcc/release.cfg"
         cfgArgs="null"
         />
     </executables>

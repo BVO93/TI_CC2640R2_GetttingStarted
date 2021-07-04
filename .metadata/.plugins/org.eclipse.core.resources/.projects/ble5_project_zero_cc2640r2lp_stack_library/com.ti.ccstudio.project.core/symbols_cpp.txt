@@ -1,7 +1,7 @@
 #define __unsigned_chars__ 1	/* Predefined */
 #define __PRAGMA_REDEFINE_EXTNAME 1	/* Predefined */
-#define __DATE__ "Aug 17 2020"	/* Predefined */
-#define __TIME__ "17:07:48"	/* Predefined */
+#define __DATE__ "May 18 2021"	/* Predefined */
+#define __TIME__ "20:05:08"	/* Predefined */
 #define __STDC__ 1	/* Predefined */
 #define __STDC_HOSTED__ 1	/* Predefined */
 #define __cplusplus 201402L	/* Predefined */
@@ -52,9 +52,9 @@
 #define __VERSION__ "EDG g++ 4.8 mode"	/* Predefined */
 #define __CHAR16_TYPE__ unsigned short	/* Predefined */
 #define __CHAR32_TYPE__ unsigned int	/* Predefined */
-#define __TI_COMPILER_VERSION__ 18012005	/* Predefined */
-#define __COMPILER_VERSION__ 18012005	/* Predefined */
-#define __TI_COMPILER_VERSION_QUAL_ID__ 20017	/* Predefined */
+#define __TI_COMPILER_VERSION__ 18012002	/* Predefined */
+#define __COMPILER_VERSION__ 18012002	/* Predefined */
+#define __TI_COMPILER_VERSION_QUAL_ID__ 19101	/* Predefined */
 #define __TI_COMPILER_VERSION_QUAL__ QUAL_LETTER	/* Predefined */
 #define __TMS470__ 1	/* Predefined */
 #define __TI_ARM__ 1	/* Predefined */
@@ -120,36 +120,6 @@
 #define RF_SINGLEMODE 1
 #define STACK_LIBRARY 1
 #define USE_ICALL 1
-#define BROADCASTER_CFG 0x01
-#define OBSERVER_CFG 0x02
-#define PERIPHERAL_CFG 0x04
-#define CENTRAL_CFG 0x08
-#define ADV_NCONN_CFG 0x01
-#define ADV_CONN_CFG 0x02
-#define SCAN_CFG 0x04
-#define INIT_CFG 0x08
-#define ADV_CFG ADV_NCONN_CFG+ADV_CONN_CFG
-#define LINK_CFG ADV_CONN_CFG+INIT_CFG
-#define FULL_CFG INIT_CFG+SCAN_CFG+ADV_NCONN_CFG+ADV_CONN_CFG
-#define L2CAP_COC_CFG 0x80
-#define HOST_V41_MASK 0x80
-#define CTRL_V41_MASK 0x7F
-#define PRIVACY_1_2_CFG 0x01
-#define SECURE_CONNS_CFG 0x02
-#define EXT_DATA_LEN_CFG 0x04
-#define SCAN_EVT_NOTICE_CFG 0x01
-#define SCAN_REQ_RPT_CFG 0x02
-#define PHY_2MBPS_CFG 0x01
-#define PHY_LR_CFG 0x02
-#define HDC_NC_ADV_CFG 0x04
-#define AE_CFG 0x08
-#define PERIODIC_ADV_CFG 0x10
-#define AOA_AOD_CFG 0x20
-#define CHAN_ALGO2_CFG 0x40
-#define BLE_V41_FEATURES V41_FEATURES
-#define BLE_V42_FEATURES V42_FEATURES+SECURE_CONNS_CFG+PRIVACY_1_2_CFG+EXT_DATA_LEN_CFG
-#define BLE_V50_FEATURES V50_FEATURES+PHY_2MBPS_CFG+HDC_NC_ADV_CFG+CHAN_ALGO2_CFG+PHY_LR_CFG+AE_CFG
-#define BLE_VS_FEATURES SCAN_REQ_RPT_CFG
 #define HOST_CONFIG PERIPHERAL_CFG
 #define GAP_BOND_MGR 1
 #define HCI_TL_NONE 1

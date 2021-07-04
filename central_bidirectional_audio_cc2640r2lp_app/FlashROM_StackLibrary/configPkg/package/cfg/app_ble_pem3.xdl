@@ -9,10 +9,11 @@
  */
 
 
--l"D:\2_Programing\1_Courses\2_TI_CCWorkspace\central_bidirectional_audio_cc2640r2lp_app\FlashROM_StackLibrary\configPkg\package\cfg\app_ble_pem3.oem3"
--l"D:\2_Programing\1_Courses\2_TI_CCWorkspace\central_bidirectional_audio_cc2640r2lp_app\Tools\src\sysbios\rom_sysbios.aem3"
--l"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\kernel\tirtos\packages\ti\targets\arm\rtsarm\lib\boot.aem3"
--l"D:\TI_Progs\CodeCompriser\simplelink_cc2640r2_sdk_4_20_00_04\kernel\tirtos\packages\ti\targets\arm\rtsarm\lib\auto_init.aem3"
+-l"D:\2_Programing\2_LaunchXL\1_TestCodeWorkspace\central_bidirectional_audio_cc2640r2lp_app\FlashROM_StackLibrary\configPkg\package\cfg\app_ble_pem3.oem3"
+-l"D:\2_Programing\2_LaunchXL\1_TestCodeWorkspace\central_bidirectional_audio_cc2640r2lp_app\Tools\src\sysbios\rom_sysbios.aem3"
+-l"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\kernel\tirtos\packages\ti\targets\arm\rtsarm\lib\boot.aem3"
+-l"C:\ti\simplelink_cc2640r2_sdk_4_40_00_10\kernel\tirtos\packages\ti\targets\arm\rtsarm\lib\auto_init.aem3"
+-l"C:\ti\ccs1030\xdctools_3_62_00_08_core\packages\xdc\rov\runtime\lib\xdc.rov.runtime.aem3"
 
 --retain="*(xdc.meta)"
 
@@ -36,6 +37,12 @@
 
 /* Content from xdc.corevers (null): */
 
+/* Content from xdc.rov (null): */
+
+/* Content from xdc.runtime (null): */
+
+/* Content from xdc.rov.runtime (null): */
+
 /* Content from xdc.shelf (null): */
 
 /* Content from xdc.services.spec (null): */
@@ -51,10 +58,6 @@
 /* Content from ti.targets (null): */
 
 /* Content from ti.targets.arm.elf (null): */
-
-/* Content from xdc.rov (null): */
-
-/* Content from xdc.runtime (null): */
 
 /* Content from ti.targets.arm.rtsarm (null): */
 
@@ -106,7 +109,7 @@ ti_sysbios_family_arm_m3_Hwi_nvic = 0xe000e000;
 
 /* Content from ti.sysbios.heaps (null): */
 
-/* Content from ti.sysbios.rom.cortexm.cc26xx.r2 (D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/kernel/tirtos/packages/ti/sysbios/rom/cortexm/cc26xx/r2/golden/CC26xx/CC26xx_link_ti.xdt): */
+/* Content from ti.sysbios.rom.cortexm.cc26xx.r2 (C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/ti/sysbios/rom/cortexm/cc26xx/r2/golden/CC26xx/CC26xx_link_ti.xdt): */
 
 -u xdc_runtime_Error_policy__C
 -u xdc_runtime_IModule_Interface__BASE__C
@@ -322,7 +325,7 @@ ti_sysbios_gates_GateMutex_Instance_finalize__E = 0x1001bec1;
 ti_sysbios_hal_Hwi_startup__E = 0x1001c04b;
 xdc_runtime_Core_assignParams__I = 0x1001c4ad;
 ti_sysbios_hal_Hwi_HwiProxy_switchFromBootStack__E = 0x1001be35;
-ti_sysbios_heaps_HeapMem_allocUnprotected__E = 0x1001a615;
+//ti_sysbios_heaps_HeapMem_allocUnprotected__E = 0x1001a615;
 ti_sysbios_knl_Swi_post__E = 0x1001b011;
 ti_sysbios_hal_Hwi_initStack = 0x1001b56d;
 xdc_runtime_Memory_alloc__E = 0x1001c349;
@@ -512,7 +515,7 @@ ti_sysbios_family_arm_cc26xx_Timer_getPeriod__E = 0x1001c09d;
 ti_sysbios_family_arm_m3_Hwi_initNVIC__E = 0x1001a171;
 ti_sysbios_knl_Clock_addI__E = 0x1001b7a5;
 ti_sysbios_family_arm_m3_Hwi_Instance_finalize__E = 0x1001a755;
-ti_sysbios_heaps_HeapMem_alloc__E = 0x1001ab15;
+//ti_sysbios_heaps_HeapMem_alloc__E = 0x1001ab15;
 ti_sysbios_knl_Task_unblockI__E = 0x1001b751;
 ti_sysbios_knl_Swi_Instance_finalize__E = 0x1001bf77;
 ti_sysbios_family_arm_m3_Hwi_disableInterrupt__E = 0x1001af45;
@@ -688,6 +691,8 @@ SECTIONS
  */
 xdc_runtime_Startup__EXECFXN__C = 1;
 xdc_runtime_Startup__RESETFXN__C = 1;
+xdc_rov_runtime_Mon__checksum = 1;
+xdc_rov_runtime_Mon__write = 1;
 
 
 SECTIONS

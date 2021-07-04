@@ -11,11 +11,11 @@ package/cfg/release_pm3g.om3g.dep: ;
 endif
 
 package/cfg/release_pm3g.om3g: | .interfaces
-package/cfg/release_pm3g.om3g: package/cfg/release_pm3g.c package/cfg/release_pm3g.mak
+package/cfg/release_pm3g.om3g: package/cfg/release_pm3g.c package/cfg/release_pm3g.mak 
 	@$(RM) $@.dep
 	$(RM) $@
 	@$(MSG) clm3g $< ...
-	$(gnu.targets.arm.M3.rootDir)/bin/arm-none-eabi-gcc -c -MD -MF $@.dep -x c   -DDeviceFamily_CC26X0R2  -Wunused -Wunknown-pragmas -ffunction-sections -fdata-sections  -mcpu=cortex-m3 -mthumb -mabi=aapcs -g -Dfar= -D__DYNAMIC_REENT__   -Dxdc_cfg__xheader__='"configPkg/package/cfg/release_pm3g.h"'  -Dxdc_target_name__=M3 -Dxdc_target_types__=gnu/targets/arm/std.h -Dxdc_bld__profile_release -Dxdc_bld__vers_1_0_7_2_1  -O2   $(XDCINCS) -ID:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include/newlib-nano -ID:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include -o $@ $<
+	$(gnu.targets.arm.M3.rootDir)/bin/arm-none-eabi-gcc -c -MD -MF $@.dep -x c   -DDeviceFamily_CC26X0R2  -Wunused -Wunknown-pragmas -ffunction-sections -fdata-sections  -mcpu=cortex-m3 -mthumb -mabi=aapcs -g -Dfar= -D__DYNAMIC_REENT__   -Dxdc_cfg__xheader__='"configPkg/package/cfg/release_pm3g.h"'  -Dxdc_target_name__=M3 -Dxdc_target_types__=gnu/targets/arm/std.h -Dxdc_bld__profile_release -Dxdc_bld__vers_1_0_7_2_1  -O2   $(XDCINCS) -IC:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include/newlib-nano -IC:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include -o $@ $<
 	-@$(FIXDEP) $@.dep $@.dep
 	
 package/cfg/release_pm3g.om3g: export LD_LIBRARY_PATH=
@@ -25,7 +25,7 @@ package/cfg/release_pm3g.sm3g: package/cfg/release_pm3g.c package/cfg/release_pm
 	@$(RM) $@.dep
 	$(RM) $@
 	@$(MSG) clm3g -S $< ...
-	$(gnu.targets.arm.M3.rootDir)/bin/arm-none-eabi-gcc -c -MD -MF $@.dep -x c -S  -DDeviceFamily_CC26X0R2  -Wunused -Wunknown-pragmas -ffunction-sections -fdata-sections  -mcpu=cortex-m3 -mthumb -mabi=aapcs -g -Dfar= -D__DYNAMIC_REENT__   -Dxdc_cfg__xheader__='"configPkg/package/cfg/release_pm3g.h"'  -Dxdc_target_name__=M3 -Dxdc_target_types__=gnu/targets/arm/std.h -Dxdc_bld__profile_release -Dxdc_bld__vers_1_0_7_2_1  -O2   $(XDCINCS) -ID:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include/newlib-nano -ID:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_10_00_10/kernel/tirtos/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include -o $@ $<
+	$(gnu.targets.arm.M3.rootDir)/bin/arm-none-eabi-gcc -c -MD -MF $@.dep -x c -S  -DDeviceFamily_CC26X0R2  -Wunused -Wunknown-pragmas -ffunction-sections -fdata-sections  -mcpu=cortex-m3 -mthumb -mabi=aapcs -g -Dfar= -D__DYNAMIC_REENT__   -Dxdc_cfg__xheader__='"configPkg/package/cfg/release_pm3g.h"'  -Dxdc_target_name__=M3 -Dxdc_target_types__=gnu/targets/arm/std.h -Dxdc_bld__profile_release -Dxdc_bld__vers_1_0_7_2_1  -O2   $(XDCINCS) -IC:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include/newlib-nano -IC:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include -o $@ $<
 	-@$(FIXDEP) $@.dep $@.dep
 	
 package/cfg/release_pm3g.sm3g: export LD_LIBRARY_PATH=

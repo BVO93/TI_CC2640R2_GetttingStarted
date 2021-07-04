@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS
+CG_TOOL_ROOT := C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS
 
 GEN_OPTS__FLAG := --cmd_file="configPkg/compiler.opt" 
 GEN_CMDS__FLAG := -l"configPkg/linker.cmd" 
@@ -150,15 +150,15 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: ARM Linker'
-	"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC26X0R2 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs.map" -i"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/source" -i"D:/TI_Progs/CodeCompriser/simplelink_cc2640r2_sdk_4_20_00_04/kernel/tirtos/packages" -i"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/lib" --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs_linkInfo.xml" --rom_model -o "TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs.out" $(ORDERED_OBJS)
+	"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC26X0R2 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs.map" -i"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/source" -i"C:/ti/simplelink_cc2640r2_sdk_4_40_00_10/kernel/tirtos/packages" -i"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/lib" --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs_linkInfo.xml" --rom_model -o "TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs.hex: $(EXE_OUTPUTS)
-	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
+	@echo 'Building secondary target: "$@"'
 	@echo 'Invoking: ARM Hex Utility'
-	"D:/TI_Progs/CodeCompriser/ccs/tools/compiler/ti-cgt-arm_20.2.0.LTS/bin/armhex"  -o "TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs.hex" $(EXE_OUTPUTS__QUOTED)
-	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
+	"C:/ti/ccs1030/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armhex" --diag_wrap=off -o "TIRTOS_CC2640R2_LAUNCHXL_tirtos_ccs.hex" $(EXE_OUTPUTS__QUOTED)
+	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 
 # Other Targets
